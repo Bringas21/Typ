@@ -1,0 +1,17 @@
+// Main layout (Navbar, content, footer)
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3rem auto 2.5rem;
+}
+
+// Content layout (Sections)
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 30rem repeat(8, auto);
+
+  @media (max-width: 480px) {
+    grid-template-rows: 25rem repeat(8, auto);
+  }
+}

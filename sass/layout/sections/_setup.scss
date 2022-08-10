@@ -1,0 +1,94 @@
+.setup360 {
+  background: white;
+  position: relative;
+  height: 100%;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  z-index: auto;
+  overflow-x: clip;
+  overflow-y: visible;
+
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0;
+    row-gap: 3rem;
+
+    @media (max-width: 480px) {
+      padding-top: 1rem;
+      padding-bottom: 0;
+    }
+  }
+
+  &__text {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 3rem;
+    padding: 0 35%;
+    text-align: center;
+
+    & h2 {
+      font-size: 2rem;
+
+      @media (max-width: 480px) {
+        font-size: 3.5rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      padding: 0 10%;
+      row-gap: 1rem;
+
+      & p {
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  &__logoStack {
+    object-fit: cover;
+    width: 45%;
+
+    @media (max-width: 480px) {
+      display: none;
+    }
+  }
+
+  &__logoMobile {
+    display: none;
+
+    @media (max-width: 480px) {
+      display: block;
+      object-fit: cover;
+      width: 65%;
+    }
+  }
+
+  &__content hr {
+    border: 0.05rem solid black;
+    border-radius: 5px;
+    width: 50%;
+
+    @media (max-width: 480px) {
+      width: 80%;
+    }
+  }
+
+  &__chain {
+    position: absolute;
+    max-width: 30rem;
+    right: -9.5rem;
+    top: -8rem;
+    z-index: 1;
+
+    @media (max-width: 480px) {
+      max-width: 10rem;
+      right: -2.5rem;
+      transform: rotate(47deg);
+    }
+  }
+}

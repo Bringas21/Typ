@@ -1,0 +1,10 @@
+{
+  "name": "typwebsite",
+  "version": "1.0.0",
+  "description": "Website for wetyp.tech",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "sass --watch --no-source-map ./sass/main.scss style.css"
+  }
+}

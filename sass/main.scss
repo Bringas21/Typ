@@ -1,0 +1,63 @@
+// NOTE: Responsive screen breakpoints
+// 320px to 480px Mobile
+// 481px to 768px Tablets
+// 769px to 1024px Laptops
+// 1025px to 1200px Desktops
+// 1201px > Ultra wide screens
+
+// TODO: ALEJANDRO 1) Make landing section text use html text instead of the image text
+
+// TODO: EMILIO 1) Hacer la página para dispositivos móviles con el diseño que nos paso luna.
+
+// TODO: EMILIO 2) Arreglar la sección de steps para que sea un poco responsive para pantallas mas grandes.
+
+// TODO: EMILIO 3) Arreglar la figura de la sección de setup360 para que no se haga un scroll hacia la derecha.
+
+@import './base/reset';
+@import './base/typography';
+@import './base/base';
+
+// Components
+@import './components/button';
+
+// Layout
+@import './layout/grid';
+@import './layout/header';
+
+// Utils
+@import './utils/mixins';
+@import './components/text';
+
+/* Landing section code */
+@import './layout/sections/landing';
+
+/* Web design section code */
+@import './layout/sections/design';
+
+/* Setup 360 section code */
+@import './layout/sections/setup';
+
+// Steps Section
+@import './layout/sections/steps';
+
+// Services Section
+@import './layout/sections/services';
+
+// Price Section
+@import './layout/sections/price';
+
+// Facts Section
+@import './layout/sections/facts';
+
+// Contact Section
+@import './layout/sections/contact';
+
+// Social Section
+@import './layout/sections/social';
+
+// Break Section
+@import './layout/sections/break';
+
+/* Footer */
+
+@import './layout/footer';

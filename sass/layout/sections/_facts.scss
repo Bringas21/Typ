@@ -1,0 +1,43 @@
+.facts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 20rem;
+  padding: 5% 22%;
+  grid-row-start: 7;
+  grid-row-end: 8;
+
+  &--title {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  &--text {
+    font-weight: 100;
+    font-size: 1.3rem;
+    color: #b0b0b0;
+  }
+
+  @media (max-width: 480px) {
+    max-height: 100%;
+    background: url('/images/1Starting/blueGrid.png');
+    background-position: center;
+    background-size: cover;
+    padding: 0 15%;
+    height: 9rem;
+
+    &--title {
+      font-size: 1rem;
+      color: white;
+      margin-bottom: 1rem;
+    }
+
+    &--text {
+      font-size: 0.8rem;
+      color: white;
+    }
+  }
+}
